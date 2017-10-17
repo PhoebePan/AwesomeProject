@@ -103,5 +103,9 @@ const TitleText = styled.Text`
 var styles = StyleSheet.create({
   year: {
     textAlign: 'center',
+  },
+  listView: {
+    paddingTop: 20,
+    backgroundColor: '#F5FCFF',
   }
 });
