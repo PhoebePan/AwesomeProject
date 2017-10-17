@@ -11,10 +11,6 @@ import {
 } from 'react-native';
 import styled from 'styled-components/native';
 
-var MOCKED_MOVIES_DATA = [
-  {title: 'Title', year: '2015', posters: {thumbnail: 'http://i.imgur.com/UePbdph.jpg'}},
-];
-
 var REQUEST_URL = 'https://raw.githubusercontent.com/facebook/react-native/master/docs/MoviesExample.json';
 
 export default class Movie extends React.Component {
