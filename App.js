@@ -1,7 +1,9 @@
 import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import styled from 'styled-components/native';
 import Login from './Login';
 
-export default class App extends React.Component { // (1)
+export default class App extends React.Component {
   constructor(props) {
     super(props); // (2)
     this.handleSubmitName = this.onSubmitName.bind(this); // (3)
@@ -18,37 +20,26 @@ export default class App extends React.Component { // (1)
     });
   }
 
-  render() { // (6)
+  render() {
     return (
-      <Login onSubmitName={ this.handleSubmitName } />
+      <StyledView>
+        <Login onSubmitName={ this.handleSubmitName } />
+        <StyledText>Open up App.js to start working on your app!</StyledText>
+        <StyledText>Changes you make will automatically reload.</StyledText>
+        <StyledText>Shake your phone to open the developer menu.</StyledText>
+      </StyledView>
     );
   }
 }
 
-// import React from 'react';
-// import { StyleSheet, Text, View } from 'react-native';
-// import styled from 'styled-components/native';
+const StyledView = styled.View`
+  flex: 1;
+  background-color: papayawhip;
+  align-items: center;
+  justify-content: center;
+`;
 
-// const StyledView = styled.View`
-//   flex: 1;
-//   background-color: papayawhip;
-//   align-items: center;
-//   justify-content: center;
-// `;
-
-// const StyledText = styled.Text`
-//   color: palevioletred;
-// `;
-
-// export default class App extends React.Component {
-//   render() {
-//     return (
-//       <StyledView>
-//         <StyledText>Open up App.js to start working on your app!</StyledText>
-//         <StyledText>Changes you make will automatically reload.</StyledText>
-//         <StyledText>Shake your phone to open the developer menu.</StyledText>
-//       </StyledView>
-//     );
-//   }
-// }
+const StyledText = styled.Text`
+  color: palevioletred;
+`;
 
