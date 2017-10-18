@@ -1,19 +1,13 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button } from 'react-native';
 import { StackNavigator } from 'react-navigation';
-import styled from 'styled-components/native';
 
-class HomeScreen extends React.Component {
-  static navigationOptions = {
-    title: 'Welcome',
-  };
-  render() {
-    return <HelloText>Hello, Navigation!</HelloText>;
-  }
-}
+import HomeScreen from './HomeScreen'
+import ChatScreen from './ChatScreen'
 
 const SimpleApp = StackNavigator({
-  Home: { screen: HomeScreen }
+  Home: { screen: HomeScreen },
+  Chat: { screen: ChatScreen },
 });
 
 export default class App extends React.Component {
@@ -24,11 +18,3 @@ export default class App extends React.Component {
     );
   }
 }
-
-const HelloText = styled.Text`
-  flex: 1;
-  font-size: 36;
-  background-color: #FFFFFF;
-  align-items: center;
-  justify-content: center;
-`
