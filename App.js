@@ -98,7 +98,7 @@ export default class App extends React.Component {
           onChangeText={password => this.setState({ password })}
           value={this.state.password}
         />
-        <Button onPress={() => this.onPressSignIn()}>Log In</Button>
+        <Button onPress={() => this.onPressSignIn()}>開始幸福</Button>
         <Text>{this.state.error}</Text>
       </View>
     )
