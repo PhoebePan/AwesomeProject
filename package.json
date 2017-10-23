@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "expo": "^21.0.0",
+    "firebase": "^4.6.0",
     "react": "16.0.0-alpha.12",
     "react-native": "^0.48.4",
     "styled-components": "^2.2.1"
