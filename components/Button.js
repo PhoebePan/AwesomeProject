@@ -7,7 +7,7 @@ const Button = ({ onPress, children }) => {
       <Text style={styles.text}>{ children }</Text>
     </TouchableOpacity>
   )
-}
+};
 
 const styles = StyleSheet.create({
   button: {
